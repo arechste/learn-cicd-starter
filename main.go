@@ -9,6 +9,7 @@ import (
 	"net/url"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
@@ -93,8 +94,9 @@ func main() {
 
 	router.Mount("/v1", v1Router)
 	srv := &http.Server{
-		Addr:    ":" + port,
-		Handler: router,
+		Addr:              ":" + port,
+		ReadHeaderTimeout: time.Second * 10,
+		Handler:           router,
 	}
 
 	log.Printf("Serving on port: %s\n", port)
@@ -116,11 +118,4 @@ func addParseTimeParam(input string) (string, error) {
 	returnUrl := u.String()
 	returnUrl = strings.TrimPrefix(returnUrl, dummyScheme)
 	return returnUrl, nil
-}
-
-// func
-func unused() {
-
-	// this is for testing staticcheck
-	// does nothing and is called by nobody
 }
