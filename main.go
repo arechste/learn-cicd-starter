@@ -117,10 +117,3 @@ func addParseTimeParam(input string) (string, error) {
 	returnUrl = strings.TrimPrefix(returnUrl, dummyScheme)
 	return returnUrl, nil
 }
-
-// func
-func unused() {
-
-	// this is for testing staticcheck
-	// does nothing and is called by nobody
-}
