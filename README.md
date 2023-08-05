@@ -31,5 +31,23 @@ make build #build the binary (notely)
 ```bash
 make run # build & execute binary (notely)
 ```
+
+```bash
+make test # run tests
+```
 ## Testing enhancements
 Write some tests 
+
+# Misc
+https://dave.cheney.net/2019/05/07/prefer-table-driven-tests
+
+bash to see coverage of test code 
+```bash
+cover () {
+    local t=$(mktemp -t cover)
+    go test $COVERFLAGS -coverprofile=$t $@ \
+        && go tool cover -func=$t \
+        && unlink $t
+}
+```
+
