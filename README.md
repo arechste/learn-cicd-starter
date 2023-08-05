@@ -53,3 +53,9 @@ cover () {
 }
 ```
 
+## DOCKER
+
+- check OS and ARCH (GOOS GOARCH)
+- Makefile
+- buildscript.sh
+- DockerFile
