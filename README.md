@@ -1,6 +1,6 @@
 # learn-cicd-starter (Notely)
-
-![code coverage badge](https://github.com/arechste/learn-ci-starter/workflows/ci/badge.svg)
+[![ci](https://github.com/arechste/learn-cicd-starter/actions/workflows/ci.yml/badge.svg?branch=addtests)](https://github.com/arechste/learn-cicd-starter/actions/workflows/ci.yml)
+[![ci](https://github.com/arechste/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/arechste/learn-cicd-starter/actions/workflows/ci.yml)
 
 This repo contains the starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
 
@@ -59,3 +59,14 @@ cover () {
 - Makefile
 - buildscript.sh
 - DockerFile
+
+## TODO's
+
+- [x] Check why coverage badge not loading in README.md (broken link)
+  - Get a working badge by -> Actions -> select workflow -> top right "..." "create status badge" - copy/paste to .md
+  - At the same location you can disable the workflow manually
+- [ ] Assumes setups pipelines with github actions (ci.yml , cd.yml)
+- [ ] auth_test.go make a working example add more tests 
+- [ ] gcloud setup Artefactory Registry and Cloud Run
+- [ ] Improve secrets management .env (op store)
+- [ ] need gcloud account & project and planetscale mysql account and setup to work.
