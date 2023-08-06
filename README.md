@@ -1,6 +1,6 @@
 # learn-cicd-starter (Notely)
 
-![code coverage badge](https://github.com/arechste/learn-ci-starter/workflows/ci/badge.svg)
+![code coverage badge](https://github.com/arechste/learn-ci-starter/actions/workflows/ci/badge.svg)
 
 This repo contains the starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
 
@@ -59,3 +59,12 @@ cover () {
 - Makefile
 - buildscript.sh
 - DockerFile
+
+## TODO's
+
+[] Check why coverage badge not loading in README.md (broken link)
+[] Assumes setups pipelines with github actions (ci.yml , cd.yml)
+[] auth_test.go make a working example add more tests 
+[] gcloud setup Artefactory Registry and Cloud Run
+[] Improve secrets management .env (op store)
+[] need gcloud account & project and planetscale mysql account and setup to work.
