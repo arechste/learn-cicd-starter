@@ -64,6 +64,7 @@ cover () {
 
 - [x] Check why coverage badge not loading in README.md (broken link)
   - Get a working badge by -> Actions -> select workflow -> top right "..." "create status badge" - copy/paste to .md
+  - At the same location you can disable the workflow manually
 - [ ] Assumes setups pipelines with github actions (ci.yml , cd.yml)
 - [ ] auth_test.go make a working example add more tests 
 - [ ] gcloud setup Artefactory Registry and Cloud Run
